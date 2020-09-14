@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Izin Al</title>
+</head>
+<body>
+<div align="center">
+    <h1>İZİN AL</h1>
+    <br/>
+    <form action="#" th:action="@{/employee/izin-save}" th:object="${izin}" method="post">
+        <table border="0" cellpadding="10">
+            <tr>
+                <td>İzin gün sayısı:</td>
+                <td><input type="text" th:field="*{gun_sayisi}"/></td>
+            </tr>
+           <!-- <tr>
+                <td>Date:</td>
+                <td><input type="date" th:field="*{date}"/></td>
+            </tr>-->
+            <tr hidden="hidden">
+                <td>Employe id:</td>
+                <td><input type="hidden" th:field="*{employee.id}" readonly="readonly"/></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
