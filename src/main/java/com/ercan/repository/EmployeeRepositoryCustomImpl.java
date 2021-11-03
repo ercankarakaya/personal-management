@@ -17,7 +17,7 @@ public class EmployeeRepositoryCustomImpl implements EmployeeRepositoryCustom {
     RestTemplate restTemplate = new RestTemplate();
 
     @Override
-    public List<Employee> getEmployeesRest() {
+    public List<Employee> getEmployees() {
       ResponseEntity<List<Employee>> respEntity = restTemplate.exchange(url, HttpMethod.GET, null,
                 new ParameterizedTypeReference<List<Employee>>() {
                });

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface EmployeeRepositoryCustom {
 
-    public List<Employee> getEmployeesRest();
+    public List<Employee> getEmployees();
 }

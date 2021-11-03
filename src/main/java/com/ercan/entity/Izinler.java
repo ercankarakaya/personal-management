@@ -12,7 +12,7 @@ public class Izinler {
     @Column(name = "izin_id")
     private Long id;
     @Column(name = "gun_sayisi")
-    private int gun_sayisi;
+    private int gunSayisi;
 
     @Column(name = "date")
     private Date date;
@@ -32,12 +32,12 @@ public class Izinler {
         this.id = id;
     }
 
-    public int getGun_sayisi() {
-        return gun_sayisi;
+    public int getGunSayisi() {
+        return gunSayisi;
     }
 
-    public void setGun_sayisi(int gun_sayisi) {
-        this.gun_sayisi = gun_sayisi;
+    public void setGunSayisi(int gunSayisi) {
+        this.gunSayisi = gunSayisi;
     }
 
     public Date getDate() {
@@ -64,13 +64,5 @@ public class Izinler {
         this.durum = durum;
     }
 
-    @Override
-    public String toString() {
-        return "Izinler{" +
-                "id=" + id +
-                ", gun_sayisi=" + gun_sayisi +
-                ", date=" + date +
-                ", employee=" + employee +
-                '}';
-    }
+
 }

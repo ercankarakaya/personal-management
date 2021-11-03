@@ -19,8 +19,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Employee getbyId(Long employee_id) {
-        return employeeRepository.findById(employee_id).get();
+    public Employee getbyId(Long employeeId) {
+        return employeeRepository.findById(employeeId).get();
     }
 
     @Override
@@ -29,22 +29,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void deleteEmployeDetails(Long employeeDetails_id) {
-             employeeRepository.deleteById(employeeDetails_id);
+    public void deleteEmployeDetails(Long employeeDetailsId) {
+             employeeRepository.deleteById(employeeDetailsId);
     }
     @Override
     public Employee findUserByUsername(String username) {
         return employeeRepository.findByUsername(username);
     }
-    @Override
-    public List<Employee> getEmployeesRest() {
-        return employeeRepository.getEmployeesRest();
-    }
+
     @Override
     public Employee getIzinSayisiGuncelle(Long id, int alinanIzin){
         Employee employee=getbyId(id);
-        int kalan_izin=employee.getKalan_izin()-alinanIzin;
-        employee.setKalan_izin(kalan_izin);
+        int kalanIzin=employee.getKalanIzin()-alinanIzin;
+        employee.setKalanIzin(kalanIzin);
         return employee;
     }
 }

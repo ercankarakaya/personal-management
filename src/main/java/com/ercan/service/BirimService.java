@@ -8,7 +8,7 @@ import java.util.List;
 public interface BirimService {
     public List<Birim> findAll();
 
-    public Birim getbyId(Long birim_id);
+    public Birim getbyId(Long birimId);
 
     public Birim saveBirim(Birim birim);
 

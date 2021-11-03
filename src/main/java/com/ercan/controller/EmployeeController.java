@@ -68,7 +68,7 @@ public class EmployeeController {
 
     @PostMapping("/izin-save")
     public String saveIzin(@ModelAttribute("izin") Izinler izin, Model model) {
-        Employee emp = employeeService.getIzinSayisiGuncelle(izin.getEmployee().getId(), izin.getGun_sayisi());
+        Employee emp = employeeService.getIzinSayisiGuncelle(izin.getEmployee().getId(), izin.getGunSayisi());
         employeeService.saveEmployeeDetails(emp);
         izin.setDurum("Beklemede");
         izinService.saveIzin(izin);

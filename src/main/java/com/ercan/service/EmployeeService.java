@@ -8,16 +8,15 @@ import java.util.List;
 public interface EmployeeService {
     public List<Employee> findAll();
 
-    public Employee getbyId(Long employee_id);
+    public Employee getbyId(Long employeeId);
 
     public Employee saveEmployeeDetails(Employee employeeDetails);
 
-    public void deleteEmployeDetails(Long employeeDetails_id);
+    public void deleteEmployeDetails(Long employeeDetailsId);
 
     public Employee findUserByUsername(String username);
 
     public Employee getIzinSayisiGuncelle(Long id, int alinanIzin);
 
-    public List<Employee> getEmployeesRest();
 
 }

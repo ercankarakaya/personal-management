@@ -34,7 +34,7 @@ public class IzinRestController {
 
     @RequestMapping(value = "/izin-al", method = {RequestMethod.GET, RequestMethod.POST})
     public Izinler izinAl(@RequestBody Izinler izin) {
-        Employee employee = employeeService.getIzinSayisiGuncelle(izin.getEmployee().getId(), izin.getGun_sayisi());
+        Employee employee = employeeService.getIzinSayisiGuncelle(izin.getEmployee().getId(), izin.getGunSayisi());
         employeeService.saveEmployeeDetails(employee);
 //        izin.setEmployee(employee);
 //        izin.setDurum("Beklemede");

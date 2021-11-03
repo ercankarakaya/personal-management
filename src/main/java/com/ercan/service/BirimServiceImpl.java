@@ -19,8 +19,8 @@ public class BirimServiceImpl implements BirimService{
     }
 
     @Override
-    public Birim getbyId(Long birim_id) {
-        return birimRepository.findById(birim_id).get();
+    public Birim getbyId(Long birimId) {
+        return birimRepository.findById(birimId).get();
     }
 
     @Override

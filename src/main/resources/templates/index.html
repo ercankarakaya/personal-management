@@ -46,12 +46,12 @@
             <tbody>
             <tr th:each="employee : ${employeeList}">
                 <td th:text="${employee.id}">ID</td>
-                <td th:text="${employee.employee_name}">Name</td>
+                <td th:text="${employee.employeeName}">Name</td>
                 <td th:text="${employee.salary}">Salary</td>
                 <td th:text="${employee.age}">Age</td>
                 <td th:text="${employee.birim.birimName}"></td>
-                <td th:text="${employee.kalan_izin}"></td>
-                <td th:text="${employee.profile_image}">Image</td>
+                <td th:text="${employee.kalanIzin}"></td>
+                <td th:text="${employee.profileImage}">Image</td>
                 <td>
                     <a th:href="@{'/employee/edit/' + ${employee.id}}">Edit</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -111,7 +111,7 @@
             <tr th:each="user : ${employee}">
                 <td th:text="${user.id}">id</td>
                 <td th:text="${user.username}">username</td>
-                <td th:text="${user.kalan_izin}">kalan izin</td>
+                <td th:text="${user.kalanIzin}">kalan izin</td>
                 <td>
                     <a th:href="@{'/employee/izin-al/'+${user.id}}">İzin Al</a>
 
@@ -134,7 +134,7 @@
             <tbody>
             <tr th:each="izin : ${izinList}">
                 <td th:text="${izin.id}">izin id</td>
-                <td th:text="${izin.gun_sayisi}">gün sayisi</td>
+                <td th:text="${izin.gunSayisi}">gün sayisi</td>
                 <td th:text="${izin.date}">date</td>
                 <td th:text="${izin.durum}">durum</td>
 
@@ -155,7 +155,7 @@
             <tbody>
             <tr th:each="izin : ${taslakIzinler}">
                 <td th:text="${izin.id}">izin id</td>
-                <td th:text="${izin.gun_sayisi}">gün sayisi</td>
+                <td th:text="${izin.gunSayisi}">gün sayisi</td>
                 <td th:text="${izin.date}">date</td>
                 <td th:text="${izin.durum}">durum</td>
             </tr>
@@ -179,7 +179,7 @@
                 <tbody>
                 <tr th:each="izin : ${onaylanacakIzinler}">
                     <td th:text="${izin.id}">izin id</td>
-                    <td th:text="${izin.gun_sayisi}">gün sayisi</td>
+                    <td th:text="${izin.gunSayisi}">gün sayisi</td>
                     <td th:text="${izin.date}">date</td>
                     <td th:text="${izin.durum}">durum</td>
                     <td>

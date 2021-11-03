@@ -14,7 +14,7 @@ public class Employee {
     private Long id;
 
     @Column(name = "employee_name")
-    private String employee_name;
+    private String employeeName;
 
     @Column(name = "employee_salary")
     private int salary;
@@ -23,10 +23,10 @@ public class Employee {
     private int age;
 
     @Column(name = "profile_image")
-    private String profile_image;
+    private String profileImage;
 
     @Column(name = "kalan_izin")
-    private int kalan_izin;
+    private int kalanIzin;
 
     @Column(name = "username")
     private String username;
@@ -55,12 +55,12 @@ public class Employee {
         this.id = id;
     }
 
-    public String getEmployee_name() {
-        return employee_name;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
-    public void setEmployee_name(String employee_name) {
-        this.employee_name = employee_name;
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
     public int getSalary() {
@@ -79,20 +79,20 @@ public class Employee {
         this.age = age;
     }
 
-    public String getProfile_image() {
-        return profile_image;
+    public String getProfileImage() {
+        return profileImage;
     }
 
-    public void setProfile_image(String profile_image) {
-        this.profile_image = profile_image;
+    public void setProfileImage(String profileImage) {
+        this.profileImage = profileImage;
     }
 
-    public int getKalan_izin() {
-        return kalan_izin;
+    public int getKalanIzin() {
+        return kalanIzin;
     }
 
-    public void setKalan_izin(int kalan_izin) {
-        this.kalan_izin = kalan_izin;
+    public void setKalanIzin(int kalanIzin) {
+        this.kalanIzin = kalanIzin;
     }
 
     public String getUsername() {

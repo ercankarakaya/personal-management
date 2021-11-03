@@ -24,8 +24,8 @@ public class IzinService {
         return izinRepository.save(izin);
     }
 
-    public void deleteIzin(Long izin_id) {
-        izinRepository.deleteById(izin_id);
+    public void deleteIzin(Long izinId) {
+        izinRepository.deleteById(izinId);
     }
 
     public List<Izinler> izinList(Long id) {
